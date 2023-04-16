@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:background="@drawable/kucing21"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_gravity="center"
+        android:translationZ="100dp"
+        android:layout_marginBottom="-87dp"
+        app:lottie_rawRes="@raw/roket"
+        app:lottie_autoPlay="true"
+        android:layout_marginLeft="-80dp"
+        app:lottie_loop="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/logoquis"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginVertical="10dp"
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="30dp"
+        android:textStyle="bold"
+        app:cornerRadius="13dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="312dp"
+            android:layout_height="390dp"
+            android:layout_gravity="left"
+            app:cardCornerRadius="30dp"
+            android:textStyle="bold"
+            app:cornerRadius="13dp">
+
+            <LinearLayout
+                android:background="@drawable/cardprofil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="40dp"
+                android:paddingLeft="80dp"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:cardCornerRadius="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-40dp"
+                >
+
+                <ImageView
+                    android:id="@+id/profil2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/hilter2"
+                    />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="90dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nama"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:layout_marginVertical="10dp"
+                    android:textAlignment="center"
+                    android:text="Nama"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/newbestscore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="17dp"
+                        android:textAlignment="center"
+                        android:text="Best Score : "/>
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/skorterbaik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/play"
+                    android:background="@drawable/backgrounbutton"
+                    android:layout_width="290dp"
+                    android:textColor="@color/purple_200"
+                    android:textStyle="bold"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:text="Play"
+                    app:cornerRadius="13dp"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

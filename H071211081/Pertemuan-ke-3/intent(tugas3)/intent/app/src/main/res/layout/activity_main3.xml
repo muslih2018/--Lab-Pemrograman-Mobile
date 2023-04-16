@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:background="@drawable/backk32"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/lp"
+            android:layout_height="wrap_content"
+            android:text="New Post"
+            android:textSize="70sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Post"
+            android:textSize="70sp"
+            android:textStyle="bold"
+            android:layout_marginTop="-50dp"
+            android:layout_gravity="center"
+            android:shadowColor="#A8FFFFFF"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="9"
+            android:textAllCaps="true"
+            android:textColor="#7866FE"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Post"
+            android:textSize="70sp"
+            android:textStyle="bold"
+            android:layout_marginTop="-50dp"
+            android:layout_gravity="center"
+            android:shadowColor="#65FFFFFF"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="9"
+            android:textAllCaps="true"
+            android:textColor="#7866FE"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Post"
+            android:textSize="70sp"
+            android:textStyle="bold"
+            android:layout_marginTop="-50dp"
+            android:layout_gravity="center"
+            android:shadowColor="#34FFFFFF"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="9"
+            android:textAllCaps="true"
+            android:textColor="#7866FE"
+            />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:orientation="vertical"
+        android:layout_marginTop="-140dp"
+        android:outlineSpotShadowColor="@color/black"
+        android:paddingVertical="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/gambar3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingVertical="20dp"
+            android:src="@drawable/baseline_image_24" />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:outlineSpotShadowColor="@color/black"
+        >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@drawable/bayangan"
+    >
+
+    <EditText
+        android:id="@+id/deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:hint="Write your caption......"
+        android:textColorHint="#2F4A4A4A" />
+
+
+</ScrollView>
+        <Button
+            android:layout_marginTop="110dp"
+            android:id="@+id/upload"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Upload"
+            android:textStyle="bold"
+            app:cornerRadius="13dp"
+            />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:background="@drawable/kucing21"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_marginTop="-120dp"
+        android:layout_gravity="center"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/logoquis"/>
+        <androidx.cardview.widget.CardView
+            android:layout_marginVertical="10dp"
+
+            android:layout_width="330dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#FFFFFF"
+            app:cardCornerRadius="30dp"
+            android:textStyle="bold"
+            app:cornerRadius="13dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="322dp"
+                android:layout_height="390dp"
+                android:layout_gravity="left"
+                app:cardCornerRadius="30dp"
+                android:textStyle="bold"
+                app:cornerRadius="13dp">
+
+                <LinearLayout
+                    android:background="@drawable/cardprofil"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="40dp"
+                    android:paddingLeft="80dp"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:cardCornerRadius="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-40dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/profil"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/hilter2"
+                        />
+                </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="100dp"
+                    android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:textColorHint="#7866FE"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fullname"
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/backgrounbutton"
+                        android:hint="Full name"
+                        android:textSelectHandle="@color/teal_200"
+                        android:theme="@style/ThemeOverlay.Material3.TextInputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:textColorHint="#7866FE"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:background="@drawable/backgrounbutton"
+                    android:id="@+id/login"
+                    android:layout_width="290dp"
+                    android:textColor="@color/purple_200"
+                    android:textStyle="bold"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="-30dp"
+                    android:text="Log in"
+                    app:cornerRadius="13dp"
+                    />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+</LinearLayout>
