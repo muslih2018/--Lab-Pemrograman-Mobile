@@ -1,0 +1,25 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Add a solid color or a gradient as the base color -->
+    <gradient
+        android:startColor="#DDFFFFFF"
+        android:endColor="#DDFFFFFF"
+        android:angle="45"/>
+
+    <!-- Apply a corner radius to make it rounded -->
+    <corners android:radius="8dp" />
+
+    <!-- Apply an outer stroke for a glass-like effect -->
+    <stroke
+        android:color="#33FFFFFF"
+        android:width="1dp" />
+
+    <!-- Add an inner stroke to create a border -->
+    <stroke
+        android:color="#AA000000"
+        android:width="1dp"
+        android:dashWidth="2dp"
+        android:dashGap="2dp" />
+
+</shape>

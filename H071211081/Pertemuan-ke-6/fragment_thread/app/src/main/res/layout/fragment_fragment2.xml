@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="20dp"
+    tools:context=".fragment2Fragment">
+    <LinearLayout
+        android:layout_marginTop="-20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/back31"
+        android:layout_gravity="center"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back4"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/imgpost"
+                        android:layout_gravity="center"
+                        android:layout_width="330dp"
+                        android:layout_height="330dp"
+                        android:src="@drawable/baseline_image_24"/>
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/back41"
+            android:layout_gravity="left"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-100dp"
+            android:background="@drawable/back3"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:paddingHorizontal="30dp"
+                    android:orientation="vertical"
+                    android:gravity="left"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="20dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/deskripsi"
+                        android:textColorHint="#32000000"
+                        android:padding="10dp"
+                        android:gravity="top"
+                        android:text=""
+                        android:hint="Type some think................."
+                        android:background="@drawable/bayangan"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:textColor="#56874A5E"
+                        android:layout_height="120dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@id/post"
+    android:layout_marginTop="20dp"
+    app:cardCornerRadius="27dp"
+    android:layout_gravity="center"
+    android:layout_width="320dp"
+    android:text="UPLOAD"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:background="@drawable/linear"
+    android:layout_height="60dp"/>
+
+
+
+</LinearLayout>
+    </ScrollView>

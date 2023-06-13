@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#00FFFFFF"
+    tools:context=".fragment3Fragment">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_height="60dp">
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:background="@drawable/bayangan"
+        android:layout_width="340dp"
+        app:iconifiedByDefault="false"
+        app:queryHint="Cari......"
+        android:layout_height="50dp">
+    </androidx.appcompat.widget.SearchView>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="37dp"
+            android:layout_height="52dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tvData"
+            tools:listitem="@layout/cari_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

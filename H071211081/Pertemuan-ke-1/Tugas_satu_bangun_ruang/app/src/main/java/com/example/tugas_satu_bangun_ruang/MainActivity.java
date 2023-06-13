@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     EditText panjang,lebar,tinggi,tinggi_kerucut,jari_jarikerucut,jari_jaribola;
     Button button_hasil_balok,button_hasil_kerucut,button_hasil_bola;
     TextView hasil_text_kerucut,hasil_text_bola,hasil_text_balok;
-    ImageView gambar;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -39,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
         bola = findViewById(R.id.bola);
         balok = findViewById(R.id.balok);
         kerucut = findViewById(R.id.kerucut);
-        gambar =findViewById(R.id.gambar);
 
         String[] daftarBangunRuang = {"Pilih Bangun Ruang","Balok", "Kerucut","bola"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, daftarBangunRuang);
@@ -51,25 +49,21 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 switch (i) {
                     case 1:
-                        gambar.setVisibility(View.GONE);
                         bola.setVisibility(View.GONE);
                         balok.setVisibility(View.VISIBLE);
                         kerucut.setVisibility(View.GONE);
                         break;
                     case 2:
-                        gambar.setVisibility(View.GONE);
                         bola.setVisibility(View.GONE);
                         balok.setVisibility(View.GONE);
                         kerucut.setVisibility(View.VISIBLE);
                         break;
                     case 3 :
-                        gambar.setVisibility(View.GONE);
                         bola.setVisibility(View.VISIBLE);
                         balok.setVisibility(View.GONE);
                         kerucut.setVisibility(View.GONE);
                         break;
                     default:
-                        gambar.setVisibility(View.VISIBLE);
                         bola.setVisibility(View.GONE);
                         balok.setVisibility(View.GONE);
                         kerucut.setVisibility(View.GONE);
